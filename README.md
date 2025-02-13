@@ -6,12 +6,47 @@
 > mainscreen.html
 
 - Line number
-> The changes started on line 14 and ended at line 302.
+> 14 - 302
 
 - Change 
 > I restructured the HTML that was provided so that I could implement internal CSS using a style tag. This included CSS for the header, footer, main content, body, buttons, images, and tables. I then added a header tag so that I could give the site more structure and color. Using what I learned in D276 regarding semantic elements, I changed the structure of the div tag so use main and added two sections. One for engine parts and one for maintenance products. Using the internal CSS I wrote, I changed the classes for the buttons, tables, and containers. I also repositioned the main content so that I could add two images to the site with text under them. Finally, I added a footer to keep with proper semantic style and give it more visual structure.
 
 ## STEP D
+- Prompt
+> Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
+
+- File name
+> AboutController.java
+
+- Line number
+> 1 - 13
+
+- Change
+> I added an AboutController to the controllers directory so that spring boot could properly navigate the the AboutPage.html. The controller includes imports for the spring boot framework and the controllers package. The controller itself simply maps to the /about endpoint and returns the AboutPage.html.
+
+- File name
+> AboutPage.html
+
+- Line number
+> 1 - 258
+
+- Change
+> The AboutPage.html was built by me from scratch. I ended up reusing some of the internal CSS that I wrote in mainscreen.html so that I could keep the same theme and style across both pages. I added a few extra style classes so that I could reposition the div as this page does not contain images whereas mainscreen does. I also added style classes for the table that is used in the AboutPage that displays the would be parts and products that the site would offer. Finally, I edited the footer to include a "Contact Us" section instead of "About Us" as it would be redundant.
+
+- File name
+> mainscreen.html
+
+- Line number
+> 193 - 201
+
+- Change
+> I added new style classes for the About Us footer. The style changes change the font color, remove the default blue highlighting for hyperlinks and also add a slight color variation on mouse hovering.
+
+- Line number
+> 308
+
+- Change
+> I removed the previous p tag I had that contained text and replaced it with an a tag so I could link to the AboutPage using the /about endpoint. This is used in conjunction with the AboutController.java that I created so that site visitors could navigate to the AboutPage using the link without having to type in the endpoint manually in the url.
 
 ## STEP D
 
