@@ -1,8 +1,15 @@
 ## STEP C
-Prompt - Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.
-file name - mainscreen.html
-line number - The changes started on line 14 and ended at line 302.
-change - I restructured the HTML that was provided so that I could implement internal CSS using a style tag. This included CSS for the header, footer, main content, body, buttons, images, and tables. I then added a header tag so that I could give the site more structure and color. Using what I learned in D276 regarding semantic elements, I changed the structure of the div tag so use main and added two sections. One for engine parts and one for maintenance products. Using the internal CSS I wrote, I changed the classes for the buttons, tables, and containers. I also repositioned the main content so that I could add two images to the site with text under them. Finally, I added a footer to keep with proper semantic style and give it more visual structure.
+- Prompt 
+Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.
+
+- File name 
+mainscreen.html
+
+- Line number
+The changes started on line 14 and ended at line 302.
+
+- Change 
+I restructured the HTML that was provided so that I could implement internal CSS using a style tag. This included CSS for the header, footer, main content, body, buttons, images, and tables. I then added a header tag so that I could give the site more structure and color. Using what I learned in D276 regarding semantic elements, I changed the structure of the div tag so use main and added two sections. One for engine parts and one for maintenance products. Using the internal CSS I wrote, I changed the classes for the buttons, tables, and containers. I also repositioned the main content so that I could add two images to the site with text under them. Finally, I added a footer to keep with proper semantic style and give it more visual structure.
 
 ## STEP D
 
