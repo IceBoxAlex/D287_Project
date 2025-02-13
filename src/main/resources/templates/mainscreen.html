@@ -190,6 +190,15 @@
             margin: 0 auto;
         }
 
+        .about-link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .about-link:hover {
+            color: oldlace;
+        }
+
     </style>
 </head>
 <body>
@@ -296,7 +305,7 @@
 <footer class="site-footer">
     <div class="footer-content">
         <h2>About Us</h2>
-        <p>There is no about us, this is a test site using my car as inspiration!</p>
+        <a th:href="@{/about}" class="about-link">Please visit our About Us page!</a>
     </div>
 </footer>
 
