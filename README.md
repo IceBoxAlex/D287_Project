@@ -77,6 +77,53 @@
 > I updated line number 6 because I needed to update the DB source.I created a new DB ending in "dbLoutchenok_3". The reason for this change was so I could initialize a new DB that would be created with my new products and parts.
 
 ## STEP F
+- Prompt
+>  Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters: The “Buy Now” button must be next to the buttons that update and delete products.
+
+- File Name
+> mainscreen.html
+
+- Line Number
+> 292
+
+- Changes
+> I added a new button in the table that previously contained the "Update" and "Delete" buttons. The new button that was added is titled "Buy Now" and it is linked to the /buyProduct endpoint. When the button is clicked, it will send the respective product id to the /buyProduct endpoint.
+
+- Prompt
+>  Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters: The button should decrement the inventory of that product by one. It should not affect the inventory of any of the associated parts.
+
+- File Name
+> AddProductController.java
+
+- Line Number
+> 181 - 206
+
+- Changes
+> I created a new method titled "buyProduct" that is called when the frontend buy now button is clicked and sents a request to /buyProduct. When called, this method will assign the proper product id and then using the provided ID, we create a variable that will store the current inventory count of that item ID. Thent he method enters a for-loop, this for-loop checks the inventory count variable. If the inventory is equal to 0 we return a failure page to the user. If the inventory is NOT equal to 0 we redirect the user to a success page. In the case that the item inv is not equal to 0, before we redirect the user to a success page, we first update the item inventory. Since the user is purchasing an item, we first update out inv count variable to decrease by 1, we then update our item id inventory, and finally, we save the new item id inventory count to the DB.
+
+- Prompt
+>  Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters: TDisplay a message that indicates the success or failure of a purchase.
+
+- File Name
+> Failure.html
+
+- Line Number
+> 1 - 12
+
+- Changes
+> I created a new html page that serves as a failure alert for the user. The page has a title and text that lets the user know that the purchase failed. And it also has a hyperlink that redirects the user back to the mainscreen.
+
+- Prompt
+>  Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters: TDisplay a message that indicates the success or failure of a purchase.
+
+- File Name
+> Success.html
+
+- Line Number
+> 1 - 12
+
+- Changes
+> I created a new html page that serves as a success alert for the user. The page has a title and tet that lets the user know that the purchase was successful. The page also contains a hyperlink that will redirect the user back to mainscreen.
 
 ## STEP G
 
