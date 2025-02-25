@@ -48,9 +48,33 @@
 - Change
 > I removed the previous p tag I had that contained text and replaced it with an a tag so I could link to the AboutPage using the /about endpoint. This is used in conjunction with the AboutController.java that I created so that site visitors could navigate to the AboutPage using the link without having to type in the endpoint manually in the url.
 
-## STEP D
-
 ## STEP E
+- Prompt
+> Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
+
+- File Name
+> BootStrapData.java
+
+- Line Number
+> 55 - 147
+
+- Changes
+> I created 5 inHousePart objects, each with their own name, inventory count, price, and ID. As well as 5 OutSourcedPart objects with their own name, inventory count, price, and ID. These 10 objects are wrapped in an in statement that checks the count of the partRepository. The reason for this if statement is to prevent the addition of duplicate items when the project is relaunched.
+
+- Line Number
+> 161 - 174
+
+- Changes
+> I created 5 product objects, each with their own name, price, and inventory count. For these product objects I used the Product class that consists of name, price, and inv and not the one that consist of id, name, price, and inv. These 5 objects were wrapped in an if statement that checks the count of the productRepository. The reason for this if statement is to prevent the addition of duplicate products when the project is relaunched.
+
+- File Name
+> application.properties
+
+- Line Number
+> 6
+
+- Changes
+> I updated line number 6 because I needed to update the DB source.I created a new DB ending in "dbLoutchenok_3". The reason for this change was so I could initialize a new DB that would be created with my new products and parts.
 
 ## STEP F
 
