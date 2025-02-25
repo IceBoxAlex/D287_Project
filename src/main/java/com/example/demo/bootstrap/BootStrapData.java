@@ -143,7 +143,7 @@ public class BootStrapData implements CommandLineRunner {
             transMount.setPrice(180.00);
             transMount.setId(1010);
 
-            outsourcedPartRepository.save(diffBushings);
+            outsourcedPartRepository.save(transMount);
         }
 
         List<OutsourcedPart> outsourcedParts=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
