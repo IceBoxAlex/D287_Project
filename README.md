@@ -126,8 +126,122 @@
 > I created a new html page that serves as a success alert for the user. The page has a title and tet that lets the user know that the purchase was successful. The page also contains a hyperlink that will redirect the user back to mainscreen.
 
 ## STEP G
+- Prompt
+> Add additional fields to the part entity for maximum and minimum inventory.
 
-## STEP G
+- File Name
+> Part.java
+
+- Line Number
+> 46 - 51
+
+- Changes
+> I created a minInv and maxInv variable, these variables also had messages such as "Minimum Inventory Must be Positive" & "Maximum Inventory Must be Positive".
+
+- Prompt
+> Add additional fields to the part entity for maximum and minimum inventory.
+
+- File Name
+> Part.java
+
+- Line Number
+> 105 - 120
+
+-Changes
+> I created the getters and setters for the minInv and maxInv varaibles.
+
+- Prompt
+> Modify the sample inventory to include the maximum and minimum fields.
+
+- File Name
+> BiitStrapData.java
+
+- Line Number
+> 64 - 65, 75 - 76, 86 - 87, 97 - 98, 108 - 109, 119 - 120, 130 - 131, 141 - 142, 152 - 153, 163 - 164
+
+- Changes
+> I changed the sample inventory for each of my inHouseParts and outSourcedParts to have a varaible for minInv and maxInv using their setters.
+
+- Prompt
+> Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set the maximum and minimum values.
+
+- File Name
+> mainscreen.html
+
+- Line Number
+> 240 - 241
+
+- Changes
+> I added the Min Inventory & Max Inventory table headers to the existing table that displays the item, price, and inventory.
+
+- Prompt
+> Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set the maximum and minimum values.
+
+- File Name
+> mainscreen.html
+
+- Line Number
+> 250 - 251
+
+- Changes
+> I added new table data. The new table data reference the minInv and maxInv of the respective part in the table.
+
+- Prompt
+> > Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set the maximum and minimum values.
+
+- File Name
+> OutsourcedPartForm.html
+
+- Line Number
+> 19, 23, 27, 30 - 45
+
+Changes
+> I first added p tags for each field to clarify what each field represents i.e., Name, Price, Inventory, PartID, Min Inventory, and Max Inventory. I also created two new input fields, one for minimum and one for maximum. These fields are linked to the minInv and maxInv in the databse so that they can be changed from the site. And finally I added a div tag to display error messages in a list format. These error messages let the user know if their current inventory count is outside the min-max inventory range.
+
+- Prompt
+> > Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set the maximum and minimum values.
+
+- File Name
+> InhousePartForm.html
+
+- Line Number
+> 19, 23, 27, 30 - 45
+
+Changes
+> I first added p tags for each field to clarify what each field represents i.e., Name, Price, Inventory, PartID, Min Inventory, and Max Inventory. I also created two new input fields, one for minimum and one for maximum. These fields are linked to the minInv and maxInv in the databse so that they can be changed from the site. And finally I added a div tag to display error messages in a list format. These error messages let the user know if their current inventory count is outside the min-max inventory range.
+
+- Prompt
+> Rename the file the persistent storage is saved to.
+
+- File Name
+> application.propterties
+
+- Line Number
+> 6
+
+- Changes
+> I updated the database url to a new version so that the changes we made in BootStrapData.java would be reflected and the database would intialize with a min and max inventory column.
+
+- Prompt
+> Modify the code to enforce that the inventory is between or at the minimum and maximum value.
+
+- File Name
+> ValidInventory.java
+
+- Line Number
+> 1 - 26
+
+- Changes
+> I created a new validator. The purpose of this validator is to make sure that our inventory count falls inside the permitted min-max inventory range. This validator also contains an error message reading "Inventory outside of range".
+
+- Prompt
+> Modify the code to enforce that the inventory is between or at the minimum and maximum value.
+
+- File Name
+> InventoryValidator.java
+
+- Changes
+> I created a new validator file. This validators purpose is to check the inventory range when the user submits a new inventory count using the inhousePartForm.html or outsouredPartForm.html page. It has an if-else statement that is meant to catch errors. Firstly, setting an upperbound that checks against the maxInv variable, and secondly, setting a lower bound that checks against the minInv variable.
 
 ## STEP H
 
