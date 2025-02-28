@@ -60,7 +60,9 @@ public class BootStrapData implements CommandLineRunner {
             headers.setName("Long Tube Headers");
             headers.setInv(5);
             headers.setPrice(999.00);
-            headers.setId(1002);       
+            headers.setId(1002);    
+            headers.setMinInv(2);
+            headers.setMaxInv(7);   
 
             partRepository.save(headers);
 
@@ -69,7 +71,9 @@ public class BootStrapData implements CommandLineRunner {
             ecuInterface.setName("Engine Tuning Interface");
             ecuInterface.setInv(12);
             ecuInterface.setPrice(699.00);
-            ecuInterface.setId(1003);       
+            ecuInterface.setId(1003);  
+            ecuInterface.setMinInv(5);
+            ecuInterface.setMaxInv(15);     
 
             partRepository.save(ecuInterface);
 
@@ -78,7 +82,9 @@ public class BootStrapData implements CommandLineRunner {
             radiator.setName("Aluminum High Capacity Radiator");
             radiator.setInv(5);
             radiator.setPrice(699.00);
-            radiator.setId(1005);       
+            radiator.setId(1005);     
+            radiator.setMinInv(5);
+            radiator.setMaxInv(15);  
 
             partRepository.save(radiator);
 
@@ -87,7 +93,9 @@ public class BootStrapData implements CommandLineRunner {
             injectors.setName("1300cc Injectors");
             injectors.setInv(11);
             injectors.setPrice(899.00);
-            injectors.setId(1007);       
+            injectors.setId(1007);
+            injectors.setMinInv(5);
+            injectors.setMaxInv(15);         
 
             partRepository.save(injectors);
             
@@ -97,6 +105,8 @@ public class BootStrapData implements CommandLineRunner {
             fuelPump.setInv(15);
             fuelPump.setPrice(349.00);
             fuelPump.setId(1009);       
+            fuelPump.setMinInv(5);
+            fuelPump.setMaxInv(15);  
 
             partRepository.save(fuelPump);
             //creating an object from the OutsourcedPart class    
@@ -106,6 +116,8 @@ public class BootStrapData implements CommandLineRunner {
             airIntakes.setInv(3);
             airIntakes.setPrice(599.00);
             airIntakes.setId(1001);
+            airIntakes.setMinInv(1);
+            airIntakes.setMaxInv(15);  
 
             outsourcedPartRepository.save(airIntakes);
 
@@ -115,6 +127,8 @@ public class BootStrapData implements CommandLineRunner {
             forcedInduction.setInv(5);
             forcedInduction.setPrice(7500.00);
             forcedInduction.setId(1004);
+            forcedInduction.setMinInv(5);
+            forcedInduction.setMaxInv(15);  
 
             outsourcedPartRepository.save(forcedInduction);
 
@@ -124,6 +138,8 @@ public class BootStrapData implements CommandLineRunner {
             diffBrace.setInv(25);
             diffBrace.setPrice(149.00);
             diffBrace.setId(1006);
+            diffBrace.setMinInv(5);
+            diffBrace.setMaxInv(30);  
 
             outsourcedPartRepository.save(diffBrace);
 
@@ -133,6 +149,8 @@ public class BootStrapData implements CommandLineRunner {
             diffBushings.setInv(20);
             diffBushings.setPrice(134.00);
             diffBushings.setId(1008);
+            diffBushings.setMinInv(15);
+            diffBushings.setMaxInv(25);  
 
             outsourcedPartRepository.save(diffBushings);
 
@@ -142,6 +160,8 @@ public class BootStrapData implements CommandLineRunner {
             transMount.setInv(18);
             transMount.setPrice(180.00);
             transMount.setId(1010);
+            transMount.setMinInv(10);
+            transMount.setMaxInv(20);  
 
             outsourcedPartRepository.save(transMount);
         }
