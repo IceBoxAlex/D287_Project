@@ -244,6 +244,17 @@ Changes
 > I created a new validator file. This validators purpose is to check the inventory range when the user submits a new inventory count using the inhousePartForm.html or outsouredPartForm.html page. It has an if-else statement that is meant to catch errors. Firstly, setting an upperbound that checks against the maxInv variable, and secondly, setting a lower bound that checks against the minInv variable.
 
 ## STEP H
+- Prompt
+> Display error messages for low inventory when adding and updating products lowers the part inventory below the minimum.
+
+- File Name
+> PriceProductValidator.java
+
+- Line Number
+> 39 - 46
+
+- Changes
+> To display an error message when updating the product inventory, I created a variable to represent the desired product inv and the current part inv. I then compare that different to the min inv of the parts. If the desired product inv is greater than the minInv, then I display a message to the user letting them know the name of the part causing the error and its minimum inventory.
 
 ## STEP I
 
