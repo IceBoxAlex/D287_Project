@@ -187,7 +187,7 @@
 > I added new table data. The new table data reference the minInv and maxInv of the respective part in the table.
 
 - Prompt
-> > Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set the maximum and minimum values.
+> Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set the maximum and minimum values.
 
 - File Name
 > OutsourcedPartForm.html
@@ -199,7 +199,7 @@ Changes
 > I first added p tags for each field to clarify what each field represents i.e., Name, Price, Inventory, PartID, Min Inventory, and Max Inventory. I also created two new input fields, one for minimum and one for maximum. These fields are linked to the minInv and maxInv in the databse so that they can be changed from the site. And finally I added a div tag to display error messages in a list format. These error messages let the user know if their current inventory count is outside the min-max inventory range.
 
 - Prompt
-> > Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set the maximum and minimum values.
+> Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set the maximum and minimum values.
 
 - File Name
 > InhousePartForm.html
@@ -257,6 +257,29 @@ Changes
 > To display an error message when updating the product inventory, I created a variable to represent the desired product inv and the current part inv. I then compare that different to the min inv of the parts. If the desired product inv is greater than the minInv, then I display a message to the user letting them know the name of the part causing the error and its minimum inventory.
 
 ## STEP I
+- Prompt
+> Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
+
+- File Name
+> PartTest.java
+
+- Line Numeber
+> 159 - 166
+
+- Changes
+> I added a test to the PartTest.java file that tests the max inventory fields.
+
+- Prompt
+> Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
+
+- File Name
+> PartTest.java
+
+- Line Numeber
+> 168 - 175
+
+- Changes
+> I added a test to the PartTest.java file that tests the min inventory fields.
 
 ## STEP J
 
