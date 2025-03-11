@@ -1,12 +1,11 @@
 package com.example.demo.domain;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
 import java.util.HashSet;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 /**
  * Project: demoDarbyFrameworks2-master
@@ -155,5 +154,23 @@ class PartTest {
         partIn.setId(1l);
         partOut.setId(1l);
         assertEquals(partIn.hashCode(),partOut.hashCode());
+    }
+
+    @Test
+    void getMaxInv() {
+        int maxInv = 5;
+        partIn.setMaxInv(maxInv);
+        assertEquals(maxInv, partIn.getMaxInv());
+        partOut.setMaxInv(maxInv);
+        assertEquals(maxInv, partOut.getMaxInv());
+    }
+
+    @Test
+    void getMinInv() {
+        int minInv = 5;
+        partIn.setMinInv(minInv);
+        assertEquals(minInv, partIn.getMinInv());
+        partOut.setMinInv(minInv);
+        assertEquals(minInv, partOut.getMinInv());
     }
 }
