@@ -275,14 +275,36 @@ Changes
 - File Name
 > PartTest.java
 
-- Line Numeber
+- Line Number
 > 168 - 175
 
 - Changes
 > I added a test to the PartTest.java file that tests the min inventory fields.
 
 ## STEP J
+- Prompt
+> Remove the class files for any unused validators in order to clean your code.
 
+- File Name
+> DeletePartValidator.java
+
+- Line Number
+> N/A
+
+- Changes
+> Removed class file as it was not being used in any logic.
+
+- Prompt
+> Remove the class files for any unused validators in order to clean your code.
+
+- File Name
+> Part.java
+
+- Line Number
+> 21 & 31
+
+- Changes
+> Removed import and references to the now delete validator.
 
 <strong>** DO NOT DISTRIBUTE OR PUBLICLY POST SOLUTIONS TO THESE LABS. MAKE ALL FORKS OF THIS REPOSITORY WITH SOLUTION CODE PRIVATE. PLEASE REFER TO THE STUDENT CODE OF CONDUCT AND ETHICAL EXPECTATIONS FOR COLLEGE OF INFORMATION TECHNOLOGY STUDENTS FOR SPECIFICS. ** </strong>
 
